@@ -19,6 +19,5 @@ app.register_error_handler(401,status_401)
 app.register_error_handler(404,status_404)
 
 
-
 if __name__ == '__main__':
     app.run(debug=True)
