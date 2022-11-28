@@ -6,36 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conectando</title>
 </head>
-<body>
+<body class="main-layout">
 
     <!-- header -->
     <header>
         <!-- header inner -->
-        <div>
+        <div  class="head_top">
 
 
             <!-- Navbar  -->
-            <div>
-               <div>
-                  <div>
-                     <div>
-                        <div>
-                           <div>
-                              <div>
+            
+            <div class="header">
+               <div class="container-fluid">
+                  <div class="row">
+                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                        <div class="full">
+                            <div class="center-desk">
+                              <div class="logo">
                                  <a href="#"><img src="{{url_for('static', filename='img/logo.png')}}" alt="#" /></a>
                               </div>
                            </div>
                         </div>
                      </div>
-                     <div>
-                        <nav>
-                           <div>
-                              <ul>
-                                 <li>
-                                    <a class="nav-link" href="#">Home</a>
+                     <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                        <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                           <div class="collapse navbar-collapse" id="navbarsExample04">
+                              <ul class="navbar-nav mr-auto">
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="#"> Home  </a>
                                  </li>
                                  <li class="nav-item">
-                                    <a class="nav-link" href="#">El autismo</a>
+                                    <a class="nav-link" href="#">El Autismo</a>
                                  </li>
                                  <li class="nav-item">
                                     <a class="nav-link" href="#">Sobre Nosotros</a>
@@ -49,29 +50,28 @@
                      </div>
                   </div>
                </div>
-            </div>
+            </div>  
             <!-- End Navbar  -->
 
             <!-- banner -->
-            <section>
-                <div>
-                    <div>
-                        <div>
-                            <div>
-                                <h1>Conectando</h1>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea tempora culpa aperiam quos maiores, veniam atque aliquam corrupti. Repudiandae, laborum eaque ab minima esse ut quas.</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div>
-                                <figure><img src="{{url_for('static', filename='img/imgBannerInf.jpg')}}" alt="#"/></figure>
-                            </div>
-                        </div>
-                    </div>
+            <section class="banner_main">
+                <div class="container-fluid">
+                   <div class="row d_flex">
+                      <div class="col-md-6">
+                         <div class="text-bg">
+                            <h1>Conectando</h1>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea tempora culpa aperiam quos maiores, veniam atque aliquam corrupti. Repudiandae, laborum eaque ab minima esse ut quas.</p>
+                         </div>
+                      </div>
+                      <div class="col-md-6">
+                         <div class="text-img">
+                            <figure><img src="{{url_for('static', filename='img/imgBannerInf.jpg')}}" alt="#"/></figure>
+                         </div>
+                      </div>
+                   </div>
                 </div>
-            </section>
-            <!-- banner -->
-
+             </section>
+            <!-- End banner -->
 
         </div>
         <!-- header inner end -->
@@ -79,51 +79,51 @@
     <!-- header end -->
 
     <!-- autismo -->
-    <div>
+    <div class="business">
 
         <!-- Contenedor 1 -->
-        <div>
-           <div>
-              <div>
-                 <div>
+        <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
                     <span>¿Conoces sobre el espectro autista?</span>
                     <h2>Precencia en el Mundo</h2>
                     <p>Muchas veces la desinformacion comienza desde que no sabemos que precencia real con datos se tiene el autismo en el dia a dia y como este esta presente en la vista de las diferentes organizaciones y significados que tienen ciertas caracteristicas o simbolos que este espectro tiene</p>
-                 </div>
-              </div>
-           </div>
-           <div>
-              <div>
-                 <div>
-                    <div>
-                       <div>
-                          <figure><img src="{{url_for('static', filename='img/infografia4.jpg')}}" alt="#"/></figure>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, facilis corporis. Numquam aperiam voluptatem iste voluptatum ex ea eligendi, nostrum provident itaque consectetur at consequatur laborum qui sequi, voluptatibus suscipit?</p>
-                       </div>
-                    </div>
-                 </div>
-              </div>
-           </div>
-        </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-10 offset-md-1">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <div class="business_box ">
+                            <figure><img src="{{url_for('static', filename='img/infografia4.jpg')}}" alt="#"/></figure>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, facilis corporis. Numquam aperiam voluptatem iste voluptatum ex ea eligendi, nostrum provident itaque consectetur at consequatur laborum qui sequi, voluptatibus suscipit?</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
         <!-- End Contenedor 1 -->
         </br></br>
         <!-- Contenedor 2 -->
-        <div>
-            <div>
-               <div>
-                  <div>
-                     <h2>Que es el autismo y algunos comportamientos</h2>
+        <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                    <h2>Que es el autismo y algunos comportamientos</h2>
                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur beatae distinctio nihil </p>
                   </div>
                </div>
             </div>
-            <div>
-               <div>
-                  <div>
-                     <div>
-                        <div>
-                           <figure><img src="{{url_for('static', filename='img/infografia2.jpg')}}" alt="#"/></figure>
-                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, facilis corporis. Numquam aperiam voluptatem iste voluptatum ex ea eligendi, nostrum provident itaque consectetur at consequatur laborum qui sequi, voluptatibus suscipit?</p>
+            <div class="row">
+               <div class="col-md-10 offset-md-1">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <div class="business_box ">
+                            <figure><img src="{{url_for('static', filename='img/infografia2.jpg')}}" alt="#"/></figure>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, facilis corporis. Numquam aperiam voluptatem iste voluptatum ex ea eligendi, nostrum provident itaque consectetur at consequatur laborum qui sequi, voluptatibus suscipit?</p>
                         </div>
                      </div>
                   </div>
@@ -133,22 +133,22 @@
          <!-- End Contenedor 2 -->
          </br></br>
          <!-- Contenedor 3 -->
-         <div>
-            <div>
-               <div>
-                  <div>
-                     <h2>Cuidados en Casa</h2>
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                    <h2>Cuidados en Casa</h2>
                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur beatae distinctio nihil </p>
                   </div>
                </div>
             </div>
-            <div>
-               <div>
-                  <div>
-                     <div>
-                        <div>
-                           <figure><img src="{{url_for('static', filename='img/infografia1.jpg')}}" alt="#"/></figure>
-                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, facilis corporis. Numquam aperiam voluptatem iste voluptatum ex ea eligendi, nostrum provident itaque consectetur at consequatur laborum qui sequi, voluptatibus suscipit?</p>
+            <div class="row">
+               <div class="col-md-10 offset-md-1">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <div class="business_box ">
+                            <figure><img src="{{url_for('static', filename='img/infografia1.jpg')}}" alt="#"/></figure>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, facilis corporis. Numquam aperiam voluptatem iste voluptatum ex ea eligendi, nostrum provident itaque consectetur at consequatur laborum qui sequi, voluptatibus suscipit?</p>
                         </div>
                      </div>
                   </div>
@@ -158,22 +158,22 @@
          <!-- End Contenedor 3 -->
          </br></br>
          <!-- Contenedor 4 -->
-         <div>
-            <div>
-               <div>
-                  <div>
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
                      <h2>Implementaciones en Escuelas para un Mejor Ambiente para las Personas Autistas</h2>
                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur beatae distinctio nihil </p>
                   </div>
                </div>
             </div>
-            <div>
-               <div>
-                  <div>
-                     <div>
-                        <div>
-                           <figure><img src="{{url_for('static', filename='img/infografia3.webp')}}" alt="#"/></figure>
-                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, facilis corporis. Numquam aperiam voluptatem iste voluptatum ex ea eligendi, nostrum provident itaque consectetur at consequatur laborum qui sequi, voluptatibus suscipit?</p>
+            <div class="row">
+               <div class="col-md-10 offset-md-1">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <div class="business_box ">
+                            <figure><img src="{{url_for('static', filename='img/infografia3.webp')}}" alt="#"/></figure>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, facilis corporis. Numquam aperiam voluptatem iste voluptatum ex ea eligendi, nostrum provident itaque consectetur at consequatur laborum qui sequi, voluptatibus suscipit?</p>
                         </div>
                      </div>
                   </div>
@@ -189,62 +189,59 @@
      <!-- Sobre Nosotros -->
     
      <!-- Aplicacion -->
-     <div>
-        <div>
-           <div>
-              <div>
-                 <div>
+     <div class="projects">
+        <div class="container">
+           <div class="row">
+              <div class="col-md-12">
+                 <div class="titlepage">
                     <span>Sobre Nosostros</span>
                     <h2>Que es conectando</h2>
                     <p> Es una app completamente gratis en iPhone la cual otorga un set completo de herramientas para la comunicacion. Estando en mas de 50 idiomas y sin la necesidad de una base de datos o conexion a internet  </p>
                  </div>
               </div>
            </div>
-           <div>
-              <div>
-                 <div>
-                    <div>
-                       <div>
-                          <figure><img src="{{url_for('static', filename='img/cel1.png')}}" alt="#"/></figure>
-                          <figure><img src="{{url_for('static', filename='img/cel2.png')}}" alt="#"/></figure>
-                          <figure><img src="{{url_for('static', filename='img/cel3.png')}}" alt="#"/></figure>
+           <div class="row">
+              <div class="col-md-10 offset-md-1">
+                 <div class="row">
+                    <div class="col-md-6 offset-md-3">
+                       <div class="projects_box ">
+                        <figure><img src="{{url_for('static', filename='img/cel1.png')}}" alt="#"/></figure>
+                        <figure><img src="{{url_for('static', filename='img/cel2.png')}}" alt="#"/></figure>
+                        <figure><img src="{{url_for('static', filename='img/cel3.png')}}" alt="#"/></figure>
                        </div>
                     </div>
-                    <div >
-                       <div>
-                          <p>Esta herramienta permite personalizar la app a las necesidades de cada persona, permite comunicarte por medio de un teclado y tambien permite comunicarte por medio de imagenes que se tranforman a texto</p>
-                          <a href="#">Descargalo</a>
+                    <div class="col-md-12">
+                       <div class="projects_box ">
+                        <p>Esta herramienta permite personalizar la app a las necesidades de cada persona, permite comunicarte por medio de un teclado y tambien permite comunicarte por medio de imagenes que se tranforman a texto</p>
+                          <a class="read_more" href="#">Descargala</a>
                        </div>
                     </div>
                  </div>
               </div>
            </div>
         </div>
-     </div>   
+     </div> 
      <!-- end Aplicacion -->
 
-
-
-
      <!-- Testimonios -->
-     <div>
-        <div>
-           <div>
-              <div>
-                 <div>
-                    <div>
+     <div class="section">
+        <div class="container">
+           <div id="" class="Testimonial">
+              <div class="row">
+                 <div class="col-md-12">
+                    <div class="titlepage">
                        <h2>Testimonios</h2>
                     </div>
                  </div>
               </div>
-              <div >
-                 <div>
-                    <div>
+              <div class="row">
+                 <div class="col-md-3">
+                    <div class="Testimonial_box">
                        <!--<i><img src="images/plan1.png" alt="#"/></i>-->
                     </div>
                  </div>
-                 <div>
-                    <di>
+                 <div class="col-md-9">
+                    <div class="Testimonial_box">
                        <h4>X Persona</h4>
                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe est, veniam aspernatur autem eveniet aperiam ducimus unde molestias! Quo assumenda sequi dolorem ad repudiandae sunt adipisci sit earum rerum asperiores?
                        </p>
@@ -258,37 +255,36 @@
      <!-- end Sobre Nosotros -->
 
      <!-- contactanos -->
-     <div>
-        <div>
-           <div>
-              <div>
-                 <div>
+     <div id="contact" class="contact">
+        <div class="container">
+           <div class="row">
+              <div class="col-md-12">
+                 <div class="titlepage">
                     <h2>Contactanos por dudas y Donaciones a la Aplicacion</h2>
                     <span>Lorem ipsum, dolor sit amet Lorem ipsum, dolor sit amet</span>
                  </div>
               </div>
            </div>
         </div>
-
-        <div>
-           <div>
-              <div>
-                 <form>
-                    <div>
-                       <div>
-                          <input placeholder="Nombre " type="text" name="Name ">
+        <div class="container">
+           <div class="row">
+              <div class="col-md-12 ">
+                 <form class="main_form ">
+                    <div class="row">
+                       <div class="col-md-12 ">
+                          <input class="form_contril" placeholder="Nombre " type="text" name="Name ">
                        </div>
-                       <div>
-                          <input placeholder="Numero de Telefono" type="text" name=" Phone Number">
+                       <div class="col-md-12">
+                          <input class="form_contril" placeholder="Numero de Telefono" type="text" name=" Phone Number">
                        </div>
-                       <div>
-                          <input placeholder="Email" type="text" name="Email">
+                       <div class="col-md-12">
+                          <input class="form_contril" placeholder="Email" type="text" name="Email">
                        </div>
-                       <div>
-                          <textarea placeholder="Mensaje" type="text" name="Message"></textarea>
+                       <div class="col-md-12">
+                          <textarea class="textarea" placeholder="Mensaje" type="text" name="Message"></textarea>
                        </div>
-                       <div>
-                          <button>Enviar</button>
+                       <div class="col-sm-12">
+                          <button class="send_btn">Enviar</button>
                        </div>
                     </div>
                  </form>
@@ -300,29 +296,29 @@
 
      <!--  footer -->
      <footer>
-        <div>
-           <div>
-              <div>
-                 <div>
-                    <div>
-                       <h3> <strong> Conectando</strong><br>
+        <div class="footer">
+           <div class="container">
+              <div class="row">
+                 <div class="col-md-12 ">
+                    <div class="cont">
+                       <h3> <strong class="multi"> Conectando</strong><br>
                           lorem ips
                        </h3>
                     </div>
                  </div>
-                 <div>
-                    <ul>
-                       <li><a href="#"><i>aaa</i></a></li>
-                       <li><a href="#"><i>bbb</i></i></a></li>
-                       <li><a href="#"><i>ccc</i></i></a></li>
+                 <div class="col-md-12">
+                    <ul class="social_icon">
+                       <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                       <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a></li>
+                       <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></i></a></li>
                     </ul>
                  </div>
               </div>
            </div>
-           <div>
-              <div>
-                 <div>
-                    <div>
+           <div class="copyright">
+              <div class="container">
+                 <div class="row">
+                    <div class="col-md-12">
                        <p>Conectando, creada sin fines de lucro</a></p>
                     </div>
                  </div>
