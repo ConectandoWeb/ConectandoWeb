@@ -523,7 +523,7 @@ button {
 /** Testimonial section **/
 
 .Testimonial {
-    background: url(../images/test.png);
+    background: url(../img/test.png);
     background-repeat: no-repeat;
     margin-top: 90px;
     padding: 90px 0px;
@@ -587,5 +587,115 @@ button {
     padding-right: 200px;
 }
 
-
 /** end Testimonial section **/
+
+/** contact section **/
+
+.padd_leri0 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.contact .titlepage span {
+    font-size: 17px;
+    line-height: 28px;
+}
+
+.contact {
+    padding-top: 90px;
+}
+
+.main_form {
+    padding: 50px 50px;
+    border: #008df3 solid 1px;
+    border-radius: 40px;
+    margin: 0px 80px;
+}
+
+.contact .main_form .form_contril {
+    border: #008df3 solid 1px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    color: #008df3;
+    font-size: 17px;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+}
+
+.contact .main_form .textarea {
+    border: #008df3 solid 1px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    color: #008df3;
+    font-size: 17px;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+}
+
+.contact .main_form .send_btn {
+    font-size: 17px;
+    transition: ease-in all 0.5s;
+    background-color: #000;
+    color: #fff;
+    padding: 13px 0px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 190px;
+}
+
+.contact .main_form .send_btn:hover {
+    background-color: #008df3;
+    transition: ease-in all 0.5s;
+    color: #fff;
+    border-radius: 26px;
+}
+
+#contact *::placeholder {
+    color: #008df3;
+    opacity: 1;
+}
+
+.current {
+    color: #fff;
+    margin-top: -4px;
+    position: absolute;
+}
+
+.con_img figure {
+    margin: 0;
+}
+
+.con_img figure img {
+    width: 100%;
+}
+
+
+/** end contact section **/
+
+.read_more {
+    font-size: 17px;
+    background-color: #fff;
+    color: #000;
+    padding: 13px 0px;
+    width: 100%;
+    max-width: 190px;
+    text-align: center;
+    display: inline-block;
+    transition: ease-in all 0.5s;
+    border-radius: 10px;
+}
+
+.read_more:hover {
+    background: #000;
+    color: #fff;
+    border-radius: 26px;
+    transition: ease-in all 0.5s;
+}
