@@ -1,0 +1,26 @@
+/*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900|Righteous&display=swap');
+
+/*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
+ 2) font-family: 'Poppins', sans-serif;
+ ----------------------------------------*****/
+
+
+/*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
+
+@import url(requirements/animate.min.css);
+@import url(requirements/normalize.css);
+@import url(requirements/icomoon.css);
+@import url(requirements/font-awesome.min.css);
+@import url(requirements/meanmenu.css);
+@import url(requirements/owl.carousel.min.css);
+@import url(requirements/slick.css);
+@import url(requirements/jquery.fancybox.min.css);
+@import url(requirements/jquery-ui.css);
+@import url(requirements/nice-select.css);
+
