@@ -63,7 +63,6 @@ h6 {
     font-weight: normal;
     position: relative;
     padding: 0 0 10px 0;
-    font-weight: normal;
     line-height: normal;
     color: #111111;
     margin: 0
@@ -84,7 +83,7 @@ h3 {
     font-family: 'Baloo Chettan', cursive;
 }
 
-h4 {
+h4 {    
     font-size: 16px
 }
 
@@ -168,31 +167,6 @@ img {
     font-size: 16px;
 }
 
-.lead {
-    font-size: 18px;
-    line-height: 30px;
-    color: #767676;
-    margin: 0;
-    padding: 0;
-}
-
-.form-control:focus {
-    border-color: #ffffff !important;
-    box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .25);
-}
-
-.navbar-form input {
-    border: none !important;
-}
-
-.badge {
-    font-weight: 500;
-}
-
-blockquote {
-    margin: 20px 0 20px;
-    padding: 30px;
-}
 
 button {
     border: 0;
@@ -204,33 +178,6 @@ button {
 .full {
     float: left;
     width: 100%;
-}
-
-.layout_padding {
-    padding-top: 90px;
-    padding-bottom: 90px;
-}
-
-.layout_padding_2 {
-    padding-top: 75px;
-    padding-bottom: 75px;
-}
-
-.light_silver {
-    background: #f9f9f9;
-}
-
-.theme_bg {
-    background: #38c8a8;
-}
-
-.margin_top_30 {
-    margin-top: 30px !important;
-}
-
-.full {
-    width: 100%;
-    float: left;
     margin: 0;
     padding: 0;
 }
@@ -244,30 +191,6 @@ button {
     background-repeat: no-repeat;
     background: url(../img/body_bg.png);
 }
-
-.loader_bg {
-    position: fixed;
-    z-index: 9999999;
-    background: #fff;
-    width: 100%;
-    height: 100%;
-}
-
-.loader {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.loader img {
-    width: 280px;
-}
-
 
 /*-- navigation--*/
 
@@ -303,7 +226,7 @@ button {
 .head_top {
     background: url(../img/banner.png);
     background-size: 100% 100%;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;   
     background-position: center;
 }
 
@@ -311,15 +234,6 @@ button {
     width: 100%;
     background: transparent;
     padding: 30px 30px;
-}
-
-.logo a {
-    font-size: 40px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #fff;
-    line-height: 40px;
-    width: 70px;
 }
 
 .logo a img {
@@ -350,26 +264,6 @@ button {
     font-size: 17px;
     line-height: 28px;
     padding: 40px 0;
-}
-
-.text-bg a {
-    font-size: 17px;
-    background-color: #fff;
-    color: #0891f8;
-    padding: 13px 0px;
-    width: 100%;
-    max-width: 190px;
-    text-align: center;
-    display: inline-block;
-    transition: ease-in all 0.5s;
-    border-radius: 10px;
-}
-
-.text-bg a:hover {
-    background-color: #000;
-    color: #fff;
-    transition: ease-in all 0.5s;
-    border-radius: 26px;
 }
 
 .text-img {
@@ -443,17 +337,6 @@ button {
     line-height: 28px;
     padding: 35px 0px;
 }
-
-.business .business_box .read_more {
-    background: #252525;
-    color: #fff;
-}
-
-.business .business_box .read_more:hover {
-    background: #0891f8;
-}
-
-
 /** end business section **/
 
 /** projects section **/
@@ -506,17 +389,6 @@ button {
     line-height: 28px;
     padding: 60px 0px 35px 0px;
 }
-
-.projects .projects_box .read_more {
-    background: #252525;
-    color: #fff;
-}
-
-.projects .projects_box .read_more:hover {
-    background: #0891f8;
-}
-
-
 /** end projects section **/
 
 
@@ -590,19 +462,13 @@ button {
 /** end Testimonial section **/
 
 /** contact section **/
-
-.padd_leri0 {
-    padding-left: 0;
-    padding-right: 0;
+.contact {
+    padding-top: 90px;
 }
 
 .contact .titlepage span {
     font-size: 17px;
     line-height: 28px;
-}
-
-.contact {
-    padding-top: 90px;
 }
 
 .main_form {
@@ -663,21 +529,6 @@ button {
     opacity: 1;
 }
 
-.current {
-    color: #fff;
-    margin-top: -4px;
-    position: absolute;
-}
-
-.con_img figure {
-    margin: 0;
-}
-
-.con_img figure img {
-    width: 100%;
-}
-
-
 /** end contact section **/
 
 .read_more {
@@ -722,23 +573,6 @@ button {
     color: #23262d;
     font-weight: bold;
     padding-bottom: 30px;
-}
-
-.cont span {
-    color: #fff;
-    font-size: 30px;
-    line-height: 30px;
-    padding: 30px 0px 30px 0px;
-    display: inline-block;
-    font-weight: bold;
-}
-
-.cont p {
-    color: #fff;
-    font-size: 17px;
-    line-height: 30px;
-    padding: 0 130px;
-    padding-bottom: 60px;
 }
 
 ul.social_icon {
@@ -789,14 +623,5 @@ ul.social_icon li a:hover {
     line-height: 22px;
     text-align: center;
 }
-
-.copyright a {
-    color: #fff;
-}
-
-.copyright a:hover {
-    color: #23262d;
-}
-
 
 /** end footer **/
