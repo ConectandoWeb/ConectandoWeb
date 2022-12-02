@@ -22,7 +22,7 @@
         <div  class="head_top">
 
             <!-- Navbar  -->
-            
+            <a name="bannerLink"></a>
             <div class="header">
                <div class="container-fluid">
                   <div class="row">
@@ -30,7 +30,7 @@
                         <div class="full">
                             <div class="center-desk">
                               <div class="logo">
-                                 <a href="#"><img src="{{url_for('static', filename='img/logo.png')}}" alt="#" /></a>
+                                 <a href="bannerLink"><img src="{{url_for('static', filename='img/logo.png')}}" alt="#" /></a>
                               </div>
                            </div>
                         </div>
@@ -40,16 +40,16 @@
                            <div class="collapse navbar-collapse" id="navbarsExample04">
                               <ul class="navbar-nav mr-auto">
                                  <li class="nav-item">
-                                    <a class="nav-link" href="#"> Home  </a>
+                                    <a class="nav-link" href="#bannerLink"> Home  </a>
                                  </li>
                                  <li class="nav-item">
-                                    <a class="nav-link" href="#">El Autismo</a>
+                                    <a class="nav-link" href="#elAutismo">El Autismo</a>
                                  </li>
                                  <li class="nav-item">
-                                    <a class="nav-link" href="#">Sobre Nosotros</a>
+                                    <a class="nav-link" href="#sobreNosotros">Sobre Nosotros</a>
                                  </li>
                                  <li class="nav-item">
-                                    <a class="nav-link" href="#">Contactanos</a>
+                                    <a class="nav-link" href="#contactanosLink">Contactanos</a>
                                  </li>
                               </ul>
                            </div>
@@ -67,7 +67,7 @@
                       <div class="col-md-6">
                          <div class="text-bg">
                             <h1>Conectando</h1>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea tempora culpa aperiam quos maiores, veniam atque aliquam corrupti. Repudiandae, laborum eaque ab minima esse ut quas.</p>
+                            <p>Esta es la propuesta realizada para combatir la desinformación a las personas ajenas al tema y darle herramientas realmente funcionales a las personas autistas.</p>
                          </div>
                       </div>
                       <div class="col-md-6">
@@ -93,9 +93,10 @@
             <div class="row">
                <div class="col-md-12">
                   <div class="titlepage">
+                     <a name="elAutismo"></a>
                     <span>¿Conoces sobre el espectro autista?</span>
-                    <h2>Precencia en el Mundo</h2>
-                    <p>Muchas veces la desinformacion comienza desde que no sabemos que precencia real con datos se tiene el autismo en el dia a dia y como este esta presente en la vista de las diferentes organizaciones y significados que tienen ciertas caracteristicas o simbolos que este espectro tiene</p>
+                    <h2>Presencia en el Mundo</h2>
+                    <p>Muchas veces la desinformación comienza desde que no sabemos qué presencia real con datos se tiene el autismo en el día a día y como este está presente en la vista de las diferentes organizaciones y significados que tienen ciertas características.</p>
                   </div>
                </div>
             </div>
@@ -105,7 +106,13 @@
                      <div class="col-md-12">
                         <div class="business_box ">
                             <figure><img src="{{url_for('static', filename='img/infografia4.jpg')}}" alt="#"/></figure>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, facilis corporis. Numquam aperiam voluptatem iste voluptatum ex ea eligendi, nostrum provident itaque consectetur at consequatur laborum qui sequi, voluptatibus suscipit?</p>
+                            <p><strong>Además de estos datos, queremos hacer hincapié en información que de cierta forma la infografía toca pero que no es muy clara. A través del tiempo y las diferentes creencias han existido o existen creencias o datos los cuales no se han esclarecido del todo  o simplemente se dejan de lado y lo cual creemos que es muy importante:</strong></br></br>
+                            <ul>
+                              <li>- Antes se creia que solo los hombres presentaban este espectro, lo cual es completamente falso, esta forma de ver la vida puede presentarse tanto en hombres como en mujeres.</li>
+                              <li>- Tambien se creia que solo se presenta en niños pequeños, lo cual también es falso, este sigue presentándose durante toda la vida, llegando hasta la adultez o vejez y no es curable o reversible.</li>
+                              <li>- La hipersensibilidad puede presentarse de multiples maneras, pudiendo ser reactivo a la vista, auditivos o tactiles, esto puede variar del caso y del nivel de hipersensibilidad que presente cada persona con autismo.</li>
+                            </ul>
+                            </p>
                         </div>
                      </div>
                   </div>
@@ -120,7 +127,10 @@
                <div class="col-md-12">
                   <div class="titlepage">
                     <h2>Que es el autismo y algunos comportamientos</h2>
-                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur beatae distinctio nihil </p>
+                     <p>Con los conceptos tampoco queremos crucificar a los datos y visualización de los niños autistas, simplemente el problema es que la única centrifugación sea específicamente a ellos y que se olvide de toda persona con este padecimiento que no cubra esta edad, por lo que varias de las siguientes cifras no solo cubren a niños, sino a personas de cualquier edad.
+                        Primeramente se hace tanto hincapié en los niños ya que esta es la edad donde comienzan a presentar estos comportamientos "anómalos", estos comportamientos pueden variar ya que cada persona es diferente, pero aquí se trata de agrupar los más comunes. 
+                        También colocamos algunas otras cifras en cuestión a Latinoamerica, Mexico y la diferencia real entre hombres y mujeres y su padecimiento a esta.
+                        </p>
                   </div>
                </div>
             </div>
@@ -130,7 +140,6 @@
                      <div class="col-md-12">
                         <div class="business_box ">
                             <figure><img src="{{url_for('static', filename='img/infografia2.jpg')}}" alt="#"/></figure>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, facilis corporis. Numquam aperiam voluptatem iste voluptatum ex ea eligendi, nostrum provident itaque consectetur at consequatur laborum qui sequi, voluptatibus suscipit?</p>
                         </div>
                      </div>
                   </div>
@@ -145,7 +154,10 @@
                <div class="col-md-12">
                   <div class="titlepage">
                     <h2>Cuidados en Casa</h2>
-                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur beatae distinctio nihil </p>
+                     <p>
+                        Los cuidados y convivencias comienzan desde pequeño y que mejor que tener ambientado el espacio donde estas personas coexisten, aqui hay algunas recomendaciones para adaptar los espacios para estas personas. 
+                        Estos aun a pesar de basarse solo en niños seria lo mismo para una persona adulta pero cambiando ciertas actividades por otras depende sea el caso, esto se acomoda segun que le guste a la persona y que no.
+                     </p>
                   </div>
                </div>
             </div>
@@ -155,7 +167,6 @@
                      <div class="col-md-12">
                         <div class="business_box ">
                             <figure><img src="{{url_for('static', filename='img/infografia1.jpg')}}" alt="#"/></figure>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, facilis corporis. Numquam aperiam voluptatem iste voluptatum ex ea eligendi, nostrum provident itaque consectetur at consequatur laborum qui sequi, voluptatibus suscipit?</p>
                         </div>
                      </div>
                   </div>
@@ -170,7 +181,7 @@
                <div class="col-md-12">
                   <div class="titlepage">
                      <h2>Implementaciones en Escuelas para un Mejor Ambiente para las Personas Autistas</h2>
-                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur beatae distinctio nihil </p>
+                     <p>Estas personas tambien tienen derecho a aprender, crecer como personas y en si llevar una vida normal, y aunque existan escuelas especiales las cuales son especificamente para personas de la neurodiversidad, la verdad es que pueden ser accesibles o en una buena ubicacion, por lo que la adaptacion de todas las escuelas tiene que ser mas un requisito, mas que una posibilidad, no por nosotros, sino por ellos.</p>
                   </div>
                </div>
             </div>
@@ -180,7 +191,6 @@
                      <div class="col-md-12">
                         <div class="business_box ">
                             <figure><img src="{{url_for('static', filename='img/infografia3.webp')}}" alt="#"/></figure>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, facilis corporis. Numquam aperiam voluptatem iste voluptatum ex ea eligendi, nostrum provident itaque consectetur at consequatur laborum qui sequi, voluptatibus suscipit?</p>
                         </div>
                      </div>
                   </div>
@@ -201,8 +211,9 @@
            <div class="row">
               <div class="col-md-12">
                  <div class="titlepage">
+                     <a name="sobreNosotros"></a>
                     <span>Sobre Nosostros</span>
-                    <h2>Que es conectando</h2>
+                    <h2>¿Que es conectando?</h2>
                     <p> Es una app completamente gratis en iPhone la cual otorga un set completo de herramientas para la comunicacion. Estando en mas de 50 idiomas y sin la necesidad de una base de datos o conexion a internet  </p>
                  </div>
               </div>
@@ -212,15 +223,13 @@
                  <div class="row">
                     <div class="col-md-6 offset-md-3">
                        <div class="projects_box ">
+                        <p> La primera vista es una ventana en la cual puedes recibir y buscar información al respecto del autismo y los puntos que estamos atacando con esta app. </p>
                         <figure><img src="{{url_for('static', filename='img/cel1.png')}}" alt="#"/></figure>
+                        <p> La segunda vista es una herramienta la cual permite a los usuarios teclear un conjunto de imágenes y a la hora que el usuario lo quiera poder expresar estas imágenes como audio, así ayudando a comunicarse de manera en que no necesitas escribir. </p>
                         <figure><img src="{{url_for('static', filename='img/cel2.png')}}" alt="#"/></figure>
+                        <p> La tercera imagen es un "Text to speech" el cual es una herramienta la cual transforma todo el texto escrito a audio.  </p>
                         <figure><img src="{{url_for('static', filename='img/cel3.png')}}" alt="#"/></figure>
-                       </div>
-                    </div>
-                    <div class="col-md-12">
-                       <div class="projects_box ">
-                        <p>Esta herramienta permite personalizar la app a las necesidades de cada persona, permite comunicarte por medio de un teclado y tambien permite comunicarte por medio de imagenes que se tranforman a texto</p>
-                          <a class="read_more" href="#">Descargala</a>
+                        <a class="read_more" href="#">Descargala</a>
                        </div>
                     </div>
                  </div>
@@ -237,25 +246,49 @@
               <div class="row">
                  <div class="col-md-12">
                     <div class="titlepage">
-                       <h2>Testimonios</h2>
+                       <h2>Ceradores</h2>
                     </div>
                  </div>
               </div>
               <div class="row">
                  <div class="col-md-3">
                     <div class="Testimonial_box">
-                       <!--<i><img src="images/plan1.png" alt="#"/></i>-->
+                       <i><img src="{{url_for('static', filename='img/adrian.png')}}" alt="#"/></i>
                     </div>
                  </div>
                  <div class="col-md-9">
                     <div class="Testimonial_box">
-                       <h4>X Persona</h4>
-                       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe est, veniam aspernatur autem eveniet aperiam ducimus unde molestias! Quo assumenda sequi dolorem ad repudiandae sunt adipisci sit earum rerum asperiores?
+                       <h4>Roberto Adrián Cano Rodríguez</h4>
+                       <p>Es increíble que en pleno 2022 siga existiendo una cantidad impresionante de desinformación relacionada al espectro autista. Vivimos en la era más conectada del planeta y a pesar de ello se sigue teniendo una idea alejada de la realidad. Gracias a esta aplicación, podemos eliminar cualquier rastro de estereotipos y otorgar herramientas necesarias.
                        </p>
                     </div>
                  </div>
               </div>
            </div>
+           <div id="" class="Testimonial">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Ceradores</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-3">
+                  <div class="Testimonial_box">
+                     <i><img src="{{url_for('static', filename='img/erick.png')}}" alt="#"/></i>
+                  </div>
+               </div>
+               <div class="col-md-9">
+                  <div class="Testimonial_box">
+                     <h4>Erick Isai Valdez Jiménez</h4>
+                     <p>
+                        Con la informacion y tecnologia se les puede dar un mejor estilo de vida a las personas con algun condicionamiento neurologico, la desinformacion podria ser erradicada, podria crearse un ambiente global inclusivo hacia las personas con neurodiversidad, ayudar a sentirse en una comunidad en la cual son pertenecentes y demas. Todo esto puede ser logrado, todo es un defecto domino y Conectando lo que busca es derribar la primera pieza. 
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
         </div>
      </div>
      <!-- end Testimonio -->
@@ -267,8 +300,9 @@
            <div class="row">
               <div class="col-md-12">
                  <div class="titlepage">
+                     <a name="contactanosLink"></a>
                     <h2>Contactanos por dudas y Donaciones a la Aplicacion</h2>
-                    <span>Lorem ipsum, dolor sit amet Lorem ipsum, dolor sit amet</span>
+                    <span>Cualquier duda con la aplicacion o con conectando, o ganas de apoyar la causa ayudandonos con una donacion para poder seguir manteniendo la aplicacion, simplemente llena el formulario con tus datos y nosotros nos comunicaremos con ustedes.</span>
                  </div>
               </div>
            </div>
@@ -309,16 +343,8 @@
                  <div class="col-md-12 ">
                     <div class="cont">
                        <h3> <strong class="multi"> Conectando</strong><br>
-                          lorem ips
                        </h3>
                     </div>
-                 </div>
-                 <div class="col-md-12">
-                    <ul class="social_icon">
-                       <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                       <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a></li>
-                       <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></i></a></li>
-                    </ul>
                  </div>
               </div>
            </div>
