@@ -337,6 +337,11 @@ button {
     line-height: 28px;
     padding: 35px 0px;
 }
+
+.business .business_box p strong {
+    font-weight: bold;
+    font-size: 19px;
+}
 /** end business section **/
 
 /** projects section **/
