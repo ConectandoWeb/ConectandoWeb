@@ -3,6 +3,7 @@ from flask import Blueprint, flash, render_template, request, redirect, url_for
 
 ## Imports internos
 
+
 ### Blueprint ###
 web = Blueprint('webRoutes',__name__)
 
@@ -17,4 +18,12 @@ def adviceEDG():
         return render_template('mod/pagEDG.html')
     except:
         flash('No se pudieron obtener los alumnos')
+
+@web.route('/color')
+def adviceColor():
+    try:
+        return render_template('mod/pagCol.html')
+    except:
+        flash('No se pudieron obtener los alumnos')
+
 

@@ -3,8 +3,12 @@ from flask import Flask, redirect, url_for
 
 ## Imports internos
 from routes.routesWeb import web
+from utils.config import Config
 
 app = Flask(__name__)
+
+###Developer Configs###
+app.config.from_object(Config)
 
 ###BluePrints para routes###
 app.register_blueprint(web)
