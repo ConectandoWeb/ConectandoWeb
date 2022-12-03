@@ -4,6 +4,7 @@ from flask import Flask, redirect, url_for
 ## Imports internos
 from routes.routesWeb import web
 from utils.config import Config
+from utils.db import db
 
 app = Flask(__name__)
 
@@ -12,6 +13,11 @@ app.config.from_object(Config)
 
 ###BluePrints para routes###
 app.register_blueprint(web)
+
+###Base de Datos###
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:@localhost/conectando'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+db.init_app(app)
 
 ### Errores ###
 def status_401(error):
