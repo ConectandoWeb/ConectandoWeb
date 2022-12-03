@@ -9,4 +9,4 @@ web = Blueprint('WebRoutes',__name__)
 ## Flask web routes ##
 @web.route('/')
 def index():
-    return render_template('pagInformativa.html')
+    return render_template('advertencia.html')
