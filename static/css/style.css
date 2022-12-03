@@ -224,7 +224,7 @@ button {
 /*--------------------------------------------------------------------- layout new css ---------------------------------------------------------------------*/
 
 .head_top {
-    background: url(../img/banner.png);
+    background: url(../img/color/banner.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;   
     background-position: center;
@@ -357,7 +357,7 @@ button {
     width: 320px;
     height: 542px;
     right: 0;
-    background: url(../img/midil.png);
+    background: url(../img/color/midil.png);
     top: -210px;
 }
 
@@ -400,7 +400,7 @@ button {
 /** Testimonial section **/
 
 .Testimonial {
-    background: url(../img/test.png);
+    background: url(../img/color/test.png);
     background-repeat: no-repeat;
     margin-top: 90px;
     padding: 90px 0px;
@@ -616,7 +616,7 @@ ul.social_icon li a:hover {
     content: "";
     position: absolute;
     bottom: 61px;
-    background: url(../img/bottom.png);
+    background: url(../img/color/bottom.png);
     width: 290px;
     height: 292px;
     right: 0;
