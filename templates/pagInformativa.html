@@ -10,7 +10,8 @@
     <!-- style css -->
     {% block css %}{% endblock %}
     <!-- Responsive-->
-    <link rel="stylesheet" href="{{url_for('static', filename='css/responsive.css')}}">
+    {% block responsive %}{% endblock %}
+    
 
     <title>Conectando</title>
 </head>
@@ -72,7 +73,7 @@
                       </div>
                       <div class="col-md-6">
                          <div class="text-img">
-                            <figure>{% block img2 %}{% endblock %}</figure>
+                            {% block img2 %}{% endblock %}
                          </div>
                       </div>
                    </div>
@@ -106,13 +107,6 @@
                      <div class="col-md-12">
                         <div class="business_box ">
                             <figure>{% block img3 %}  {% endblock %}</figure>
-                            <p><strong>Además de estos datos, queremos hacer hincapié en información que de cierta forma la infografía toca pero que no es muy clara. A través del tiempo y las diferentes creencias han existido o existen creencias o datos los cuales no se han esclarecido del todo  o simplemente se dejan de lado y lo cual creemos que es muy importante:</strong></br></br>
-                            <ul>
-                              <li>- Antes se creia que solo los hombres presentaban este espectro, lo cual es completamente falso, esta forma de ver la vida puede presentarse tanto en hombres como en mujeres.</li>
-                              <li>- Tambien se creia que solo se presenta en niños pequeños, lo cual también es falso, este sigue presentándose durante toda la vida, llegando hasta la adultez o vejez y no es curable o reversible.</li>
-                              <li>- La hipersensibilidad puede presentarse de multiples maneras, pudiendo ser reactivo a la vista, auditivos o tactiles, esto puede variar del caso y del nivel de hipersensibilidad que presente cada persona con autismo.</li>
-                            </ul>
-                            </p>
                         </div>
                      </div>
                   </div>
@@ -120,16 +114,47 @@
             </div>
          </div>
         <!-- End Contenedor 1 -->
+
+          <!-- Contenedor 2 -->
+        <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="titlepage">
+                  <h2>Mitos que Existen Alrededor del Autismo</h2>
+                  <p><strong>Además de estos datos, queremos hacer hincapié en información que de cierta forma la infografía toca pero que no es muy clara. A través del tiempo y las diferentes creencias han existido o existen creencias o datos los cuales no se han esclarecido del todo  o simplemente se dejan de lado y lo cual creemos que es muy importante:</strong></br></br>
+                     <ul>
+                       <li>- Antes se creia que solo los hombres presentaban este espectro, lo cual es completamente falso, esta forma de ver la vida puede presentarse tanto en hombres como en mujeres.</li>
+                       <li>- Tambien se creia que solo se presenta en niños pequeños, lo cual también es falso, este sigue presentándose durante toda la vida, llegando hasta la adultez o vejez y no es curable o reversible.</li>
+                       <li>- La hipersensibilidad puede presentarse de multiples maneras, pudiendo ser reactivo a la vista, auditivos o tactiles, esto puede variar del caso y del nivel de hipersensibilidad que presente cada persona con autismo.</li>
+                     </ul>
+                     </p>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-10 offset-md-1">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="business_box ">
+                         <figure>{% block imgn %}  {% endblock %}</figure>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+     <!-- End Contenedor 2 -->
+
+
+
         </br></br>
-        <!-- Contenedor 2 -->
+        <!-- Contenedor 33 -->
         <div class="container">
             <div class="row">
                <div class="col-md-12">
                   <div class="titlepage">
-                    <h2>Que es el autismo y algunos comportamientos</h2>
-                     <p>Con los conceptos tampoco queremos crucificar a los datos y visualización de los niños autistas, simplemente el problema es que la única centrifugación sea específicamente a ellos y que se olvide de toda persona con este padecimiento que no cubra esta edad, por lo que varias de las siguientes cifras no solo cubren a niños, sino a personas de cualquier edad.
-                        Primeramente se hace tanto hincapié en los niños ya que esta es la edad donde comienzan a presentar estos comportamientos "anómalos", estos comportamientos pueden variar ya que cada persona es diferente, pero aquí se trata de agrupar los más comunes. 
-                        También colocamos algunas otras cifras en cuestión a Latinoamerica, Mexico y la diferencia real entre hombres y mujeres y su padecimiento a esta.
+                    <h2>Las Desiciones en Momentos de Crisis</h2>
+                     <p>Para las personas autistas, tomar decisiones y reaccionar en situaciones difíciles puede resultar un desafío abrumador. La sobrecarga sensorial y emocional a la que se enfrentan diariamente puede dificultar su capacidad para procesar la información y tomar decisiones de manera rápida y eficiente. En momentos de estrés o crisis, es común que las personas autistas experimenten ataques de ansiedad o meltdowns, en los que pueden perder el control de sus emociones y comportarse de manera impredecible. Para aquellos que no comprenden completamente los desafíos que enfrentan las personas autistas, puede ser fácil malinterpretar su comportamiento y culparlos por su incapacidad para tomar decisiones o controlar sus emociones. Es importante tener en cuenta que estas dificultades no son una cuestión de falta de voluntad o debilidad, sino el resultado de la manera en que sus cerebros procesan la información.
                         </p>
                   </div>
                </div>
@@ -153,10 +178,9 @@
             <div class="row">
                <div class="col-md-12">
                   <div class="titlepage">
-                    <h2>Cuidados en Casa</h2>
+                    <h2>Como Identificar una Crisis en una Persona Autista</h2>
                      <p>
-                        Los cuidados y convivencias comienzan desde pequeño y que mejor que tener ambientado el espacio donde estas personas coexisten, aqui hay algunas recomendaciones para adaptar los espacios para estas personas. 
-                        Estos aun a pesar de basarse solo en niños seria lo mismo para una persona adulta pero cambiando ciertas actividades por otras depende sea el caso, esto se acomoda segun que le guste a la persona y que no.
+                        Los ataques se pueden presentar de distintas formas y en diferentes intensidades, mas sin embargo, aqui tratamos de englobar aquellos comportamientos mas comunes y que mas demarcan el comienzo o el proceso de una crisis.
                      </p>
                   </div>
                </div>
@@ -201,8 +225,6 @@
         
      </div>
      <!-- end el autismo -->
-
-
      <!-- Sobre Nosotros -->
     
      <!-- Aplicacion -->
@@ -214,7 +236,7 @@
                      <a name="sobreNosotros"></a>
                     <span>Sobre Nosostros</span>
                     <h2>¿Que es conectando?</h2>
-                    <p> Es una app completamente gratis en iPhone la cual otorga un set completo de herramientas para la comunicacion. Estando en mas de 50 idiomas y sin la necesidad de una base de datos o conexion a internet  </p>
+                    <p> Es una app completamente gratis en iPhone la cual otorga un set completo de herramientas para la comunicacion. Estando en mas de 50 idiomas y sin la necesidad de base de datos o conexion a internet  </p>
                  </div>
               </div>
            </div>
@@ -229,7 +251,7 @@
                         <figure>{% block img8 %}  {% endblock %}</figure>
                         <p> La tercera imagen es un "Text to speech" el cual es una herramienta la cual transforma todo el texto escrito a audio.  </p>
                         <figure>{% block img9 %}  {% endblock %}</figure>
-                        <a class="read_more" href="#">Descargala</a>
+                        
                        </div>
                     </div>
                  </div>
@@ -310,28 +332,68 @@
         <div class="container">
            <div class="row">
               <div class="col-md-12 ">
-                 <form class="main_form ">
+               <div class="titlepage"><h2>Envianos Cualquier Duda que Tengas</h2></div>
+               <br>
+               {% with messages = get_flashed_messages() %}
+                  {% if messages %}
+                  <div class="alert alert-secondary" role="alert">
+                     {% for mess in messages %}
+                        {{ mess }}
+                     {% endfor %}
+                  </div>
+                  {% endif %}
+               {% endwith %}
+                 <form class="main_form " method="post" {% block action %}  {% endblock %} enctype="multipart/form-data" id="formulario-s">
                     <div class="row">
                        <div class="col-md-12 ">
-                          <input class="form_contril" placeholder="Nombre " type="text" name="Name ">
+                          <input class="form_contril" placeholder="Nombre " type="text" id="txtNombre" name="txtNombre">
                        </div>
                        <div class="col-md-12">
-                          <input class="form_contril" placeholder="Numero de Telefono" type="text" name=" Phone Number">
+                          <input class="form_contril" placeholder="Email" type="text" id="txtEmail" name="txtEmail">
                        </div>
                        <div class="col-md-12">
-                          <input class="form_contril" placeholder="Email" type="text" name="Email">
-                       </div>
-                       <div class="col-md-12">
-                          <textarea class="textarea" placeholder="Mensaje" type="text" name="Message"></textarea>
+                          <textarea class="textarea" placeholder="Mensaje" type="text" id="txtMensaje" name="txtMensaje"></textarea>
                        </div>
                        <div class="col-sm-12">
-                          <button class="send_btn">Enviar</button>
+                          <input class="checkbox" type="checkbox" id="cBox" name="cBox" value="checked"><label for="cbox">Estoy de acuerdo con los <a href=" {% block link_acuerdos %} {% endblock %} "> Acuerdos y condiciones y Politicas de Privacidad</a></label>
                        </div>
+                       <div class="col-sm-12">
+                          <input type="submit" value="Enviar" class="send_btn">
+                       </div>
+                        
                     </div>
-                 </form>
+                  </form>
+                  
+                  {% if value['scroll'] == 'true' %}
+                     <script>
+                        window.onload = function() {
+                           document.getElementById('formulario-s').scrollIntoView();
+                           console.log
+                        }
+                        
+                     </script>
+                  {% endif %}
               </div>
            </div>
         </div>
+
+        <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="titlepage">
+                  <br>
+                  <br>
+                  <h2>Y aqui puedes hacer tus donaciones</h2>
+                  <form action="https://www.paypal.com/donate" method="post" target="_top">
+                     <input type="hidden" name="hosted_button_id" value="5QNPWJZWTTNRS" />
+                     {% block paypal2 %}  {% endblock %}
+                     {% block paypal %}  {% endblock %}
+                  </form>
+                  
+               </div>
+            </div>
+         </div>
+      </div>
      </div>
      <!-- end contactanos -->
 

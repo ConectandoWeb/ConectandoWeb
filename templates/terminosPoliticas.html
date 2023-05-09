@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}">
+    <!-- style css -->
+    {% block css %}{% endblock %}
+    <!-- Responsive-->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/responsive.css')}}">
+
+    <title>Conectando</title>
+</head>
+
+<body class="main-layout">
+    <header>
+
+            <!-- header inner -->
+        <div  class="head_top">
+
+            <!-- Navbar  -->
+            <a name="bannerLink"></a>
+            <div class="header">
+               <div class="container-fluid">
+                  <div class="row">
+                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                        <div class="full">
+                            <div class="center-desk">
+                              <div class="logo">
+                                 <a href="bannerLink">{% block img1 %}{% endblock %}</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                        <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                           <div class="collapse navbar-collapse" id="navbarsExample04">
+                              <ul class="navbar-nav mr-auto">
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="{% block home %}{% endblock %}"> Home </a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="#terYcon"> Terminos y Condiciones </a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="#polPriv">Politicas de Privacidad</a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </nav>
+                     </div>
+                  </div>
+               </div>
+            </div>  
+            <!-- End Navbar  -->
+
+            <!-- banner -->
+            <section class="banner_main">
+               <div class="container-fluid">
+                  <div class="row d_flex">
+                     <div class="col-md-6">
+                        <div class="text-bg">
+                           <h1>Conectando</h1>
+                           <p>Bienvenido/a a Conectando. Antes de que continúes utilizando nuestros servicios, es importante que conozcas y comprendas los términos y acuerdos, asi como nuestras Politicas de Priivacidad que rigen nuestra relación. Estos establecen las reglas y condiciones que se aplican al uso de nuestra página web, y son esenciales para proteger tus derechos y los nuestros como proveedores de servicios. Al utilizar nuestra página web, estás aceptando estos términos y acuerdos, por lo que te pedimos que los leas detenidamente antes de continuar.</p>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="text-img">
+                           <figure>{% block img2 %}{% endblock %}</figure>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+           <!-- End banner -->
+
+            
+        </div>
+        <!-- header inner end -->
+    </header>
+
+    <!-- autismo -->
+   <div class="business">
+
+        <!-- Contenedor 1 -->
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <a name="terYcon"></a>
+                    <h2>Terminos y Condiciones</h2>
+                    <span>Ultima Actualizacion: 16 de Abril del 2023</span>
+                  </div>
+               </div>
+            </div>
+
+            <div class="row">
+               <div class="col-md-10 offset-md-1">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <div class="business_box ">
+                           <h3>1. Aceptación de los Términos y Condiciones</h3>
+                           <p>Al utilizar el sitio web Conectando, aceptas cumplir con estos Términos y Condiciones, que constituyen un acuerdo legalmente vinculante entre tú y Conectando. Si no estás de acuerdo con estos Términos y Condiciones, no utilices el Sitio.</p>
+                           <p>Nos reservamos el derecho de modificar estos Términos y Condiciones en cualquier momento sin previo aviso. Tu uso continuado del Sitio después de la publicación de cambios en los Términos y Condiciones constituirá tu aceptación de dichos cambios.</p> 
+                        </div>
+                        <div class="business_box ">
+                           <h3>2. Uso del Sitio</h3>
+                           <p>Conectando te otorga una licencia limitada, no exclusiva, intransferible y revocable para utilizar el Sitio, sujeto a tu cumplimiento de estos Términos y Condiciones. No puedes utilizar el Sitio con fines comerciales sin nuestro consentimiento previo por escrito.</p>
+                           <p>Al utilizar el Sitio, aceptas no:</p>
+                           <ul>
+                              <li>• Violar ninguna ley, norma o regulación aplicable.</li>
+                              <li>•	Realizar actividades fraudulentas o ilegales.</li>
+                              <li>•	Publicar, transmitir o almacenar contenido que viole los derechos de propiedad intelectual de terceros, o que sea ofensivo, difamatorio, obsceno, discriminatorio o de cualquier otro modo inapropiado.</li>
+                              <li>•	Utilizar el Sitio para enviar correo no deseado, virus informáticos u otro contenido dañino.</li>
+                              <li>•	Interferir con el funcionamiento del Sitio o el acceso de otros usuarios al Sitio.</li>
+                           </ul>
+                        </div>
+                        <div class="business_box ">
+                           <h3>3. Propiedad intelectual</h3>
+                           <p>El Sitio y su contenido, incluidos, entre otros, textos, gráficos, logotipos, imágenes y software, son propiedad de Conectando o sus licenciantes y están protegidos por las leyes de propiedad intelectual aplicables. No adquieres ningún derecho de propiedad intelectual sobre el Sitio o su contenido al utilizarlo.</p>
+                        </div>
+                        <div class="business_box ">
+                           <h3>4. Limitación de responsabilidad</h3>
+                           <p>El Sitio se proporciona "tal cual" y "según disponibilidad" sin garantías de ningún tipo, ya sean expresas o implícitas. Conectando no garantiza que el Sitio sea seguro, esté libre de errores o esté siempre disponible.</p>
+                           <p>En ningún caso Conectando, sus directores, empleados, agentes, proveedores o licenciantes serán responsables por cualquier daño directo, indirecto, incidental, especial, punitivo o consecuente, incluidos, entre otros, pérdida de ingresos, pérdida de datos, daños a la reputación o interrupción del negocio, que resulte del uso o la imposibilidad de usar el Sitio, incluso si hemos sido informados de la posibilidad de dichos daños.</p>
+                        </div>
+                        <div class="business_box ">
+                           <h3>5. Indemnización</h3>
+                           <p>Aceptas indemnizar, defender y eximir de responsabilidad a Conectando, sus directores, empleados, agentes, proveedores y licenciantes de cualquier reclamo, demanda, pérdida, daño, costo o gasto, incluidos los honorarios razonables de abogados, que surjan de tu violación de estos Términos y Condiciones o tu uso del Sitio.</p>
+                        </div>
+                        <div class="business_box ">
+                           <h3>6. Enlaces a sitios web de terceros</h3>
+                           <p>El Sitio puede contener enlaces a sitios web de terceros. Estos enlaces se proporcionan únicamente para tu comodidad y no implican nuestra aprobación o respaldo a dichos sitios web. Conectando no es responsable del contenido, la exactitud, la seguridad o las prácticas de privacidad de estos sitios web de terceros. Si decides acceder a estos sitios web, lo haces bajo tu propio riesgo.</p>
+                        </div>
+                        <div class="business_box ">
+                           <h3>7. Privacidad</h3>
+                           <p>Tu privacidad es importante para nosotros. Consulta nuestra Política de Privacidad para obtener información sobre cómo recopilamos, utilizamos y protegemos tus datos personales.</p>
+                        </div>
+                        <div class="business_box ">
+                           <h3>8.Terminación</h3>
+                           <p>Conectando se reserva el derecho, a su exclusivo criterio, de suspender o cancelar tu acceso y uso del Sitio en cualquier momento, por cualquier motivo y sin previo aviso. También puedes cancelar tu cuenta en cualquier momento comunicándote con nosotros a través de "conectando.infor@gmail.com".</p>
+                        </div>
+                        <div class="business_box ">
+                           <h3>9. Ley aplicable y jurisdicción</h3>
+                           <p>partes acuerdan someter cualquier disputa que surja de estos Términos y Condiciones a la jurisdicción exclusiva de los tribunales del Area Metropolitana de Guadalajara, Mexico./p>
+                        </div>
+                        <div class="business_box ">
+                           <h3>10. Disposiciones generales</h3>
+                           <p>Si alguna disposición de estos Términos y Condiciones es considerada inválida o inaplicable, dicha disposición se limitará o eliminará en la medida mínima necesaria y las disposiciones restantes de estos Términos y Condiciones permanecerán en pleno vigor y efecto.</p>
+                           <p>La renuncia de Conectando a ejercer o hacer cumplir cualquier derecho o disposición de estos Términos y Condiciones no constituirá una renuncia a dicho derecho o disposición en el futuro.</p>
+                           <p>Estos Términos y Condiciones, junto con la Política de Privacidad y cualquier otro acuerdo que se incorpore por referencia, constituyen el acuerdo completo entre tú y Conectando con respecto al uso del Sitio y reemplazan todos los acuerdos, entendimientos y comunicaciones anteriores, ya sean escritos u orales.</p>
+                        </div>
+                        <div class="business_box ">
+                           <h3>11. Información de contacto</h3>
+                           <p>Si tienes preguntas, comentarios o inquietudes sobre estos Términos y Condiciones, por favor contáctanos a travez de     </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+        <!-- End Contenedor 1 -->
+        </br></br>
+
+
+        <!-- Contenedor 2 -->
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <a name="polPriv"></a>
+                    <h2>Politica de Privacidad</h2>
+                    <span>Ultima Actualizacion: 16 de Abril del 2023</span>
+                  </div>
+               </div>
+            </div>
+
+            <div class="row">
+               <div class="col-md-10 offset-md-1">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <div class="business_box ">
+                           <h3>Introduccion</h3>
+                           <p>Conectando ("nosotros", "nos", "nuestro") se compromete a proteger y respetar la privacidad de todos los usuarios de nuestra página web (el "Sitio"). La presente Política de Privacidad describe cómo recopilamos, utilizamos y protegemos la información personal que nos proporcionas al utilizar el Sitio.</p>
+                           <p>Al utilizar el Sitio y proporcionarnos tus datos personales, aceptas los términos de esta Política de Privacidad. Por favor, lee atentamente esta Política de Privacidad y revísala periódicamente, ya que podríamos actualizarla ocasionalmente.</p>
+                        </div>
+                        <div class="business_box ">
+                           <h3>Recopilacion de Datos</h3>
+                           <p>Podemos recopilar y procesar la siguiente información sobre ti:</p>
+                           <ul>
+                              <li>• Información que nos proporcionas al registrarte en nuestro Sitio, como tu nombre completo, correo electrónico, contraseña y cualquier otra información que decidas proporcionar.</li>
+                              <li>• Información que nos proporcionas al completar formularios, encuestas o al comunicarte con nosotros.</li>
+                              <li>• Detalles de las transacciones que realices a través de nuestro Sitio, incluidos los datos de tu tarjeta de crédito o débito, si procede.</li>
+                              <li>• Información técnica, como la dirección IP, el tipo de dispositivo, el sistema operativo y la información de navegación.</li>
+                           </ul>
+                        </div>
+                        <div class="business_box ">
+                           <h3>Uso de la Informacion</h3>
+                           <p>Utilizamos la información que recopilamos para:</p>
+                           <ul>
+                              <li>• Proveer, mantener y mejorar nuestro Sitio y servicios.</li>
+                              <li>• Personalizar tu experiencia en nuestro Sitio, mostrándote contenido y publicidad relevante.</li>
+                              <li>• Comunicarnos contigo, responder a tus preguntas y proporcionarte información importante.</li>
+                              <li>• Procesar transacciones y realizar análisis internos para mejorar nuestros servicios.</li>
+                              <li>• Cumplir con nuestras obligaciones legales y reglamentarias.</li>
+                           </ul>
+                        </div>
+                        <div class="business_box ">
+                           <h3>Protección de la información</h3>
+                           <p>Nos esforzamos por proteger tus datos personales utilizando medidas de seguridad técnicas y organizativas adecuadas. Sin embargo, ninguna transmisión de información por Internet es completamente segura. Aunque haremos todo lo posible para proteger tus datos personales, no podemos garantizar la seguridad de los datos transmitidos a nuestro Sitio; cualquier transmisión es bajo tu propio riesgo.</p>
+                        </div>
+                        <div class="business_box ">
+                           <h3>Compartir Informacion</h3>
+                           <p>No compartiremos tu información personal con terceros sin tu consentimiento, excepto en los siguientes casos:</p>
+                           <ul>
+                              <li>• Cuando sea necesario para cumplir con una obligación legal o reglamentaria.</li>
+                              <li>• Cuando sea necesario para proteger nuestros derechos, propiedad o seguridad, o los de nuestros usuarios u otros.</li>
+                              <li>• 3.	En el caso de una fusión, adquisición o venta de activos, en cuyo caso podríamos divulgar tus datos personales al comprador o vendedor potencial.</li>
+                           </ul>
+                        </div>
+                        <div class="business_box ">
+                           <h3>Cookies</h3>
+                           <p>Nuestro Sitio utiliza cookies para mejorar tu experiencia de usuario. Puedes obtener más información sobre cómo utilizamos las cookies en nuestra Política de Cookies.</p>
+                        </div>
+                        <div class="business_box ">
+                           <h3>Tus Derechos</h3>
+                           <p>Tienes derecho a acceder, rectificar, cancelar y oponerte al tratamiento de tus datos personales. Para ejercer estos derechos, envíanos un correo electrónico a [correo electrónico de contacto] con una copia de tu identificación oficial.</p>
+                        </div>
+                        <div class="business_box ">
+                           <h3>Enlace a Sitios Web de Terceros</h3>
+                           <p>Nuestro Sitio puede contener enlaces a sitios web de terceros. Si sigues un enlace a uno de estos sitios web, ten en cuenta que tienen sus propias políticas de privacidad y que no aceptamos ninguna responsabilidad ni obligación por sus políticas o prácticas. Por favor, verifica las políticas de privacidad de estos sitios web antes de enviarles cualquier información personal.</p>
+                        </div>
+                        <div class="business_box ">
+                           <h3>Cambio en Nuestra Politica de Privacidad</h3>
+                           <p>Nos reservamos el derecho de modificar esta Política de Privacidad en cualquier momento. Cualquier cambio que realicemos en nuestra Política de Privacidad se publicará en esta página, por lo que te recomendamos revisarla periódicamente. Si continuas utilizando el Sitio después de la publicación de cambios en la Política de Privacidad, se considerará que aceptas dichos cambios.</p>
+                        </div>
+                        <div class="business_box ">
+                           <h3>Menores de Edad</h3>
+                           <p>Nuestro Sitio no está destinado a ser utilizado por menores de 18 años. No recopilamos a sabiendas información personal de menores de edad. Si nos damos cuenta de que hemos recopilado información personal de un menor sin el consentimiento de sus padres o tutores, eliminaremos dicha información lo más rápido posible.</p>
+                        </div>
+                        <div class="business_box ">
+                           <h3>Contacto</h3>
+                           <p>Si tienes alguna pregunta, comentario o solicitud relacionada con nuestra Política de Privacidad, no dudes en ponerte en contacto con nosotros a través de "conectando.infor@gmail.com"</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+          </div>
+         <!-- End Contenedor 2 -->
+   </div>
+          <!--  footer -->
+     <footer>
+      <div class="footer">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12 ">
+                  <div class="cont">
+                     <h3> <strong class="multi"> Conectando</strong><br>
+                     </h3>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="copyright">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <p>Conectando, creada sin fines de lucro</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <!-- end footer -->
+
+
+
+</body>

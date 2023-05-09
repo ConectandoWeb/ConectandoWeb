@@ -1,0 +1,52 @@
+{% extends './CRUD-Comments.html' %}
+
+{% block titulo %} Enviar Correo {% endblock %}
+
+{% block body %} 
+
+
+    <div class="container">
+
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <div class="alert alert-secondary" role="alert">
+                    {% for mess in messages %}
+                        {{ mess }}
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% endwith %}
+
+        <br>
+
+        <form method="post" action="/sendEmail/{{comm.id_comentario}}" enctype="multipart/form-data">
+            <div class="card">
+                <div class="card-header">
+                    Agregar Nueva Persona
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Datos de la Persona</h5>
+                    <p class="card-text">
+                        <div class="form-group">
+                            <label for="txtAsunto">Asunto:</label>
+                            <input id="txtAsunto" class="form-control" type="text" name="txtAsunto">
+                        </div>
+                        <div class="form-group">
+                            <label for="txtMensajeEmail">Mensaje:</label>
+                            <input id="txtMensajeEmail" class="form-control" type="textarea" name="txtMensajeEmail">
+                        </div>
+                       
+                    
+                        <div class="form-group">
+                            <input type="submit" value="Enviar" class="btn btn-primary">
+                            <a href="{{url_for('ccomentsRoutes.homeComments')}}" class="btn btn-secondary">Regresar</a>
+                        </div> 
+                    </p>
+                </div>
+            </div>
+        
+        </form>
+    
+    </div>
+
+    {% endblock %}

@@ -1,0 +1,7 @@
+{% extends './terminosPoliticas.html' %}
+
+{% block css %} <link rel="stylesheet" href="{{url_for('static', filename='css/termsStyleEDG.css')}}"> {% endblock %}
+
+{% block img1 %} <img src="{{url_for('static', filename='img/edg/logo.png')}}" alt="#" /> {% endblock %}
+
+{% block home %} {{url_for('webRoutes.adminEDG')}} {% endblock %}

@@ -1,0 +1,55 @@
+{% extends './CRUD-Comments.html' %}
+
+{% block titulo %} Comentarios Pendientes {% endblock %}
+
+{% block body %} 
+
+<div class="container">
+
+    </br>
+
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <div class="alert alert-secondary" role="alert">
+                    {% for mess in messages %}
+                        {{ mess }}
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% endwith %}
+
+        <br><br>
+        
+        <table class="table table-light">
+            <thead class="thead-light">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Mensaje</th>
+                    <th>Status</th>
+                    <th><div class="float-right">
+                        Acciones
+                    </div></th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for i in e %}
+                    <tr>
+                        <td> {{i.nombre}} </td>
+                        <td> {{i.mensaje}} </td>
+                        <td> {{i.estado}} </td>
+                        <td> 
+                            <div class="float-right">
+                                <!--  <a class="btn btn-warning" href="#">Editar</a> |  --> 
+                                <a class="btn btn-primary" href="{{url_for('ccomentsRoutes.sendEmail',id=i.id_comentario)}}">Enviar correo</a>
+                                <a class="btn btn-danger" href="{{url_for('ccomentsRoutes.deleteComment',id=i.id_comentario)}}">Eliminar</a>
+                            </div>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    
+    </div>
+
+    {% endblock %}
+
