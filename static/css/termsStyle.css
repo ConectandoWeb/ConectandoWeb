@@ -6,11 +6,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700,900|Righteous&display=swap');
 
-/*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
- 2) font-family: 'Poppins', sans-serif;
- ----------------------------------------*****/
-
-
 /*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
 
 @import url(requirements/animate.min.css);
@@ -211,13 +206,20 @@ button {
     color: #000;
 }
 
+.navigation.navbar-dark .navbar-nav .active>.nav-link,
+.navigation.navbar-dark .navbar-nav .nav-link.active,
+.navigation.navbar-dark .navbar-nav .nav-link.show,
+.navigation.navbar-dark .navbar-nav .show>.nav-link {
+    color: #fdd430;
+}
+
 /*--------------------------------------------------------------------- top banner area ---------------------------------------------------------------------*/
 
 
 /*--------------------------------------------------------------------- layout new css ---------------------------------------------------------------------*/
 
 .head_top {
-    background: url(../img/edg/banner.png);
+    background: url(../img/color/banner.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;   
     background-position: center;
@@ -254,21 +256,9 @@ button {
 
 .text-bg p {
     color: #fff;
-    font-size: 17px;
+    font-size: 15px;
     line-height: 28px;
-    padding: 40px 0;
-}
-
-.text-img {
-    padding-top: 0px;
-}
-
-.text-img figure {
-    margin: 0px;
-}
-
-.text-img figure img {
-    width: 70%;
+    padding: 20px;
 }
 
 .titlepage {
@@ -298,7 +288,7 @@ button {
 }
 
 .business .titlepage span {
-    color: #737373;
+    color: #83072d;
     font-size: 30px;
     font-family: 'Baloo Chettan', cursive;
     text-transform: uppercase;
@@ -313,255 +303,34 @@ button {
 }
 
 .business .business_box {
-    text-align: center;
-}
-
-.business .business_box figure {
-    margin: 0;
-}
-
-.business .business_box figure img {
-    width: 100%;
+    text-align: justify;
 }
 
 .business .business_box p {
     color: #000;
     font-size: 17px;
     line-height: 28px;
-    padding: 35px 0px;
+    padding: 15px 0px;
+    text-align: justify;
+}
+
+.business .business_box ul, .business .business_box li {
+    color: #000;
+    font-size: 17px;
+    line-height: 28px;
+    padding: 15px 0px;
+    text-align: justify;
 }
 
 .business .business_box p strong {
     font-weight: bold;
     font-size: 19px;
 }
-/** end business section **/
-
-/** projects section **/
-
-.projects {
-    padding-top: 90px;
-    position: relative;
-}
-
-.projects::after {
-    position: absolute;
-    content: "";
-    width: 320px;
-    height: 542px;
-    right: 0;
-    background: url(../img/edg/midil.png);
-    top: -210px;
-}
-
-.projects .titlepage span {
-    color: #737373;
-    font-size: 30px;
-    font-family: 'Baloo Chettan', cursive;
-    text-transform: uppercase;
-    line-height: 37px;
-    padding-bottom: 10px;
-    display: inline-block;
-}
-
-.projects .titlepage h2 {
-    color: #272f43;
-    font-weight: normal;
-}
-
-.projects .projects_box {
-    text-align: center;
-}
-
-.projects .projects_box figure {
-    margin: 0;
-}
-
-.projects .projects_box figure img {
-    width: 100%;
-}
-
-.projects .projects_box p {
-    color: #000;
-    font-size: 17px;
-    line-height: 28px;
-    padding: 60px 0px 35px 0px;
-}
-/** end projects section **/
-
-
-/** Testimonial section **/
-
-.Testimonial {
-    background: url(../img/edg/test.png);
-    background-repeat: no-repeat;
-    margin-top: 90px;
-    padding: 90px 0px;
-    background-position: center;
-    background-size: 100% 100%;
-}
-
-.Testimonial .titlepage h2 {
-    color: #fff;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-}
-
-.Testimonial .titlepage span {
-    color: #fff;
-}
-
-.Testimonial_box i {
-    border: #e6e1e1 solid 12px;
-    width: 150px;
-    height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    border-radius: 210px;
-    cursor: pointer;
-    background: #e6e1e1;
-}
-
-.Testimonial_box i::after {
-    position: absolute;
-    content: "";
-    width: 50px;
-    height: 50px;
-    bottom: 40px;
-    right: 63px;
-    display: inline-block;
-    border: #ddd solid 6px;
-    border-radius: 30px;
-}
-
-.Testimonial_box {
-    text-align: left;
-}
-
-.Testimonial_box h4 {
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 20px;
-    line-height: 20px;
-    font-weight: 400;
-    padding: 0;
-}
-
-.Testimonial_box p {
-    color: #fff;
-    font-size: 17px;
-    line-height: 28px;
-    padding: 25px 0;
-    padding-right: 200px;
-}
-
-/** end Testimonial section **/
-
-/** contact section **/
-.contact {
-    padding-top: 90px;
-}
-
-.contact .titlepage span {
-    font-size: 17px;
-    line-height: 28px;
-}
-
-.main_form {
-    padding: 50px 50px;
-    border: #6e6e6e solid 1px;
-    border-radius: 40px;
-    margin: 0px 80px;
-}
-
-.contact .main_form .form_contril {
-    border: #6e6e6e solid 1px;
-    margin-bottom: 20px;
-    width: 100%;
-    height: 45px;
-    background: #fff;
-    color: #6e6e6e;
-    font-size: 17px;
-    border-top: 0;
-    border-right: 0;
-    border-left: 0;
-}
-
-.contact .main_form .textarea {
-    border: #6e6e6e solid 1px;
-    margin-bottom: 20px;
-    width: 100%;
-    height: 60px;
-    background: #fff;
-    color: #6e6e6e;
-    font-size: 17px;
-    border-top: 0;
-    border-right: 0;
-    border-left: 0;
-}
-
-.contact .main_form label {
-    margin-left: 10px;
-    font-size: 15px;
-}
-
-.contact .main_form label a:hover {
-    color: #6e6e6e;
-}
-
-.contact .main_form .send_btn {
-    font-size: 17px;
-    transition: ease-in all 0.5s;
-    background-color: #000;
-    color: #fff;
-    padding: 13px 0px;
-    margin: 0 auto;
-    display: block;
-    margin-top: 30px;
-    width: 100%;
-    max-width: 190px;
-}
-
-.contact .main_form .send_btn:hover {
-    background-color: #6e6e6e;
-    transition: ease-in all 0.5s;
-    color: #fff;
-    border-radius: 26px;
-}
-
-#contact *::placeholder {
-    color: #6e6e6e;
-    opacity: 1;
-}
-
-/** end contact section **/
-
-.read_more {
-    font-size: 17px;
-    background-color: #fff;
-    color: #000;
-    padding: 13px 0px;
-    width: 100%;
-    max-width: 190px;
-    text-align: center;
-    display: inline-block;
-    transition: ease-in all 0.5s;
-    border-radius: 10px;
-}
-
-.read_more:hover {
-    background: #000;
-    color: #fff;
-    border-radius: 26px;
-    transition: ease-in all 0.5s;
-}
 
 /** footer **/
 
 .multi {
-    color: #6e6e6e;
+    color: #83072d;
 }
 
 .footer {
@@ -600,7 +369,7 @@ ul.social_icon li a {
     width: 50px;
     height: 50px;
     display: inline-block;
-    color: #6e6e6e;
+    color: #83072d;
 }
 
 ul.social_icon li a:hover {
@@ -609,7 +378,7 @@ ul.social_icon li a:hover {
 
 .copyright {
     padding: 20px 0px;
-    background: #737373;
+    background: #83072d;
     margin-top: 50px;
     position: relative;
 }
@@ -618,7 +387,7 @@ ul.social_icon li a:hover {
     content: "";
     position: absolute;
     bottom: 61px;
-    background: url(../img/edg/bottom.png);
+    background: url(../img/color/bottom.png);
     width: 290px;
     height: 292px;
     right: 0;

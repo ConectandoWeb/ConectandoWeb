@@ -230,6 +230,7 @@ button {
     background-position: center;
 }
 
+
 .header {
     width: 100%;
     background: transparent;
@@ -305,7 +306,7 @@ button {
 }
 
 .business .titlepage span {
-    color: #0891f8;
+    color: #83072d;
     font-size: 30px;
     font-family: 'Baloo Chettan', cursive;
     text-transform: uppercase;
@@ -338,7 +339,7 @@ button {
     padding: 35px 0px;
 }
 
-.business .business_box p strong {
+.business .titlepage p strong {
     font-weight: bold;
     font-size: 19px;
 }
@@ -354,7 +355,7 @@ button {
 .projects::after {
     position: absolute;
     content: "";
-    width: 320px;
+    width: 25 0px;
     height: 542px;
     right: 0;
     background: url(../img/color/midil.png);
@@ -362,7 +363,7 @@ button {
 }
 
 .projects .titlepage span {
-    color: #0891f8;
+    color: #83072d;
     font-size: 30px;
     font-family: 'Baloo Chettan', cursive;
     text-transform: uppercase;
@@ -478,18 +479,18 @@ button {
 
 .main_form {
     padding: 50px 50px;
-    border: #008df3 solid 1px;
+    border: #83072d solid 1px;
     border-radius: 40px;
     margin: 0px 80px;
 }
 
 .contact .main_form .form_contril {
-    border: #008df3 solid 1px;
+    border: #83072d solid 1px;
     margin-bottom: 20px;
     width: 100%;
     height: 45px;
     background: #fff;
-    color: #008df3;
+    color: #83072d;
     font-size: 17px;
     border-top: 0;
     border-right: 0;
@@ -497,17 +498,27 @@ button {
 }
 
 .contact .main_form .textarea {
-    border: #008df3 solid 1px;
+    border: #83072d solid 1px;
     margin-bottom: 20px;
     width: 100%;
     height: 60px;
     background: #fff;
-    color: #008df3;
+    color: #83072d;
     font-size: 17px;
     border-top: 0;
     border-right: 0;
     border-left: 0;
 }
+
+.contact .main_form label {
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.contact .main_form label a:hover {
+    color: #83072d;
+}
+
 
 .contact .main_form .send_btn {
     font-size: 17px;
@@ -517,20 +528,21 @@ button {
     padding: 13px 0px;
     margin: 0 auto;
     display: block;
-    margin-top: 30px;
+    margin-top: 20px;
     width: 100%;
     max-width: 190px;
+    text-align: center;
 }
 
 .contact .main_form .send_btn:hover {
-    background-color: #008df3;
+    background-color: #83072d;
     transition: ease-in all 0.5s;
     color: #fff;
     border-radius: 26px;
 }
 
 #contact *::placeholder {
-    color: #008df3;
+    color: #83072d;
     opacity: 1;
 }
 
@@ -559,7 +571,7 @@ button {
 /** footer **/
 
 .multi {
-    color: #008df3;
+    color: #83072d;
 }
 
 .footer {
@@ -598,7 +610,7 @@ ul.social_icon li a {
     width: 50px;
     height: 50px;
     display: inline-block;
-    color: #008df3;
+    color: #83072d;
 }
 
 ul.social_icon li a:hover {
@@ -607,7 +619,7 @@ ul.social_icon li a:hover {
 
 .copyright {
     padding: 20px 0px;
-    background: #0891f8;
+    background: #83072d;
     margin-top: 50px;
     position: relative;
 }

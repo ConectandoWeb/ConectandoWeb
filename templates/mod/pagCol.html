@@ -1,19 +1,22 @@
 {% extends './pagInformativa.html' %}
 
+{% block responsive %} <link rel="stylesheet" href="{{url_for('static', filename='css/responsive.css')}}"> {% endblock %}
 
 {% block css %} <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}"> {% endblock %}
 
 {% block img1 %} <img src="{{url_for('static', filename='img/color/logo.png')}}" alt="#" /> {% endblock %}
 
-{% block img2 %} <img src="{{url_for('static', filename='img/color/imgBannerInf.jpg')}}" alt="#"/> {% endblock %}
+{% block img2 %} <img src="{{url_for('static', filename='img/color/AutismoInvicible.png')}}" alt="#"/> {% endblock %}
 
-{% block img3 %} <img src="{{url_for('static', filename='img/color/infografia4.jpg')}}" alt="#"/> {% endblock %}
+{% block img3 %} <img src="{{url_for('static', filename='img/color/Cantidad.png')}}" alt="#"/> {% endblock %}
 
-{% block img4 %} <img src="{{url_for('static', filename='img/color/infografia2.jpg')}}" alt="#"/> {% endblock %}
+{% block imgn %} <img src="{{url_for('static', filename='img/color/Mitos.png')}}" alt="#"/> {% endblock %}
 
-{% block img5 %} <img src="{{url_for('static', filename='img/color/infografia1.jpg')}}" alt="#"/> {% endblock %}
+{% block img4 %} <img src="{{url_for('static', filename='img/color/Desiciones.png')}}" alt="#"/> {% endblock %}
 
-{% block img6 %} <img src="{{url_for('static', filename='img/color/infografia3.webp')}}" alt="#"/> {% endblock %}
+{% block img5 %} <img src="{{url_for('static', filename='img/color/Identificar.png')}}" alt="#"/> {% endblock %}
+
+{% block img6 %} <img src="{{url_for('static', filename='img/color/Escuela.png')}}" alt="#"/> {% endblock %}
 
 {% block img7 %} <img src="{{url_for('static', filename='img/color/cel1.png')}}" alt="#"/> {% endblock %}
 
@@ -24,3 +27,11 @@
 {% block img10 %} <img src="{{url_for('static', filename='img/color/adrian.png')}}" alt="#"/> {% endblock %}
 
 {% block img11 %} <img src="{{url_for('static', filename='img/color/erick.png')}}" alt="#"/> {% endblock %}
+
+{% block paypal2 %} <input type="image" src="{{url_for('static', filename='img/color/paypal.png')}}" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" /> {% endblock %}
+
+{% block paypal %} <img alt="" border="0" src="{{url_for('static', filename='img/color/paypal.png')}}" width="1" height="1" /> {% endblock %}
+
+{% block action %} action="/PageColor" {% endblock %}
+
+{% block link_acuerdos %} {{url_for('webRoutes.TCPPC')}} {% endblock %}
